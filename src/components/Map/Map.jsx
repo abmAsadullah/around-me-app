@@ -27,8 +27,8 @@ const Map = () => {
 
     mapInstanceRef.current = new mapboxgl.Map({
       container: mapContainerRef.current, // container ID
-      center: [-74.5, 40], // starting position [lng, lat]
-      zoom: 9, // starting zoom
+      center: [-73.935242, 40.730610], // starting position [lng, lat]
+      zoom: 10, // starting zoom
     });
 
     mapInstanceRef.current.on("load", () => {

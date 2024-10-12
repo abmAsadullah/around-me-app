@@ -10,10 +10,10 @@ const Header = () => {
     <AppBar position='static'>
       <Toolbar className={classes.toolbar}>
         <Typography variant='h5' className={classes.title}>
-          Travel Map
+          Around Me
         </Typography>
         <Typography variant='h6' className={classes.title}>
-          Search around you and select:
+          Search around you and select purpose:
         </Typography>
         {/* <Box style={{display:'flex'}}>
           <Typography variant='h6' className={classes.title}>
