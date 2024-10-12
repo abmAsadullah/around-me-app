@@ -12,19 +12,22 @@ const Header = () => {
         <Typography variant='h5' className={classes.title}>
           Travel Map
         </Typography>
-        <Box style={{display:'flex'}}>
+        <Typography variant='h6' className={classes.title}>
+          Search around you and select:
+        </Typography>
+        {/* <Box style={{display:'flex'}}>
           <Typography variant='h6' className={classes.title}>
-            Explore New Places
+            Search around you and select.
           </Typography>
-          {/* <Autocomplete> */}
+          <Autocomplete>
             <div className={classes.search}>
               <div className={classes.searchIcon}>
                 <SearchIcon />
               </div>
               <InputBase placeholder='Search...' classes={{ root: classes.inputRoot, input: classes.inputInput }}/>
             </div>
-          {/* </Autocomplete> */}
-        </Box>
+          </Autocomplete>
+        </Box> */}
       </Toolbar>
     </AppBar>
   )
