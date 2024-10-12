@@ -1,20 +1,22 @@
 import React from 'react'
-// import {CssBaseline, Grid} from '@material-ui/core'
-import { CssBaseline, Grid } from '@mui/material'
-import Header from './components/Header/Header'
-import List from './components/List/List'
-import Map from './components/Map/Map'
+import { CssBaseline } from '@mui/material'
+import Grid from '@mui/material/Grid2';
 
-const App = () => {
+import './App.css'
+import Header from './components/Header/Header'
+import Map from './components/Map/Map'
+import List from './components/List/List'
+
+function App() {
   return (
     <>
       <CssBaseline />
       <Header />
-      <Grid container spacing={3} style={{ width: '100%' }}>
-        <Grid item xs={12} md={8}>
+      <Grid container spacing={3} style={{width: '100'}}>
+        <Grid size={{ xs: 12, md: 8 }}>
           <Map />
         </Grid>
-        <Grid item xs={12} md={4}>
+        <Grid size={{ xs: 12, md: 4 }}>
           <List />
         </Grid>
       </Grid>
